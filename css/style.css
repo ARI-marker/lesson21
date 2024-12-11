@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.main-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.main-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card1 {
+    background-color: #e3f2fd;
+}
+
+.card2 {
+    background-color: #fff3e0;
+}
+
+.card3 {
+    background-color: #e8f5e9;
+}
+
+.card4 {
+    background-color: #fce4ec;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .main-section {
+        padding: 20px;
+    }
+}
+button{
+    background-color: red;
+}
